@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import { message } from '../../../../types';
+import { message } from '../../types';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
