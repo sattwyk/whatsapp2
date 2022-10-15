@@ -1,4 +1,4 @@
-declare module '*!png' {
+declare module '*.png' {
   const content: ImageSourcePropType;
   export default content;
 }

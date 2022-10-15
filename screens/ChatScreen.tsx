@@ -1,5 +1,5 @@
 import { Text, ImageBackground, StyleSheet } from 'react-native';
-import bg from './../assets/images/BG.png!png';
+import bg from './../assets/images/BG.png';
 
 export default function chatScreen() {
   return (

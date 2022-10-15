@@ -14,6 +14,7 @@ export default function ChatListItem({ chat }: { chat: Chat }) {
         }}
         style={styles.image}
       />
+
       <View style={styles.content}>
         <View style={styles.row}>
           <Text numberOfLines={1} style={styles.name}>

@@ -10,4 +10,14 @@ export interface Chat {
   };
 }
 
-export type chats = Chat[];
+export type Chats = Chat[];
+
+export type Message = {
+  id: string;
+  text: string;
+  user: {
+    id: string;
+    name: string;
+  };
+  createdAt: string;
+};
