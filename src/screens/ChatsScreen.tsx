@@ -7,6 +7,7 @@ export default function ChatsScreen() {
     <FlatList
       data={chats}
       renderItem={({ item }) => <ChatListItem chat={item} />}
+      style={{ backgroundColor: 'white' }}
     />
   );
 }
