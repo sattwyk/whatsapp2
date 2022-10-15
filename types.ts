@@ -1,4 +1,4 @@
-export interface Chat {
+export interface chat {
   id: string;
   user: {
     image: string;
@@ -10,9 +10,9 @@ export interface Chat {
   };
 }
 
-export type Chats = Chat[];
+export type chats = chat[];
 
-export type Message = {
+export type message = {
   id: string;
   text: string;
   user: {

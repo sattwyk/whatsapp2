@@ -1,10 +1,15 @@
-import { Text, ImageBackground, StyleSheet } from 'react-native';
+import { Text, ImageBackground, StyleSheet, FlatList } from 'react-native';
 import bg from './../assets/images/BG.png';
+import Message from '../components/Message';
+import messages from '../assets/data/messages.json';
 
 export default function chatScreen() {
   return (
     <ImageBackground source={bg} style={styles.bg}>
-      <Text>chatScreen</Text>
+      <FlatList
+        data={messages}
+        renderItem={({ item }) => <Message message={item} />}
+      />
     </ImageBackground>
   );
 }

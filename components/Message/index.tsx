@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
-import { Message } from '../../types';
-export default function Message({ message }: { message: Message }) {
+import { message } from '../../types';
+export default function Message({ message }: { message: message }) {
   return (
     <View>
       <Text>{message.text}</Text>
