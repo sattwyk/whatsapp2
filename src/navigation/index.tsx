@@ -10,7 +10,6 @@ export default function Navigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <ChatsScreen />
         <Stack.Screen name='Chats' component={ChatsScreen} />
         <Stack.Screen name='Chat' component={ChatScreen} />
       </Stack.Navigator>
