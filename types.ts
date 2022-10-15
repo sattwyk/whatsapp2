@@ -9,3 +9,5 @@ export interface Chat {
     createdAt: string;
   };
 }
+
+export type chats = Chat[];
