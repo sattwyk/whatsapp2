@@ -1,11 +1,11 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { Chat } from '../../types';
+import { chat } from '../../types';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
 dayjs.extend(relativeTime);
 
-export default function ChatListItem({ chat }: { chat: Chat }) {
+export default function ChatListItem({ chat }: { chat: chat }) {
   return (
     <View style={styles.container}>
       <Image
