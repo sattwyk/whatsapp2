@@ -1,8 +1,8 @@
 import { Text, ImageBackground, StyleSheet, FlatList } from 'react-native';
 import bg from './../assets/images/BG.png';
-import Message from '../components/Message';
-import messages from '../assets/data/messages.json';
-import InputBox from '../components/InputBox';
+import Message from './../components/Message';
+import messages from '../../assets/data/messages.json';
+import InputBox from './../components/InputBox';
 
 export default function chatScreen() {
   return (
