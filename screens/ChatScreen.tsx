@@ -9,6 +9,8 @@ export default function chatScreen() {
       <FlatList
         data={messages}
         renderItem={({ item }) => <Message message={item} />}
+        style={{ padding: 10 }}
+        inverted
       />
     </ImageBackground>
   );
