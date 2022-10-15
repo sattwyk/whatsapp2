@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import {
   ImageBackground,
   StyleSheet,
@@ -6,12 +8,22 @@ import {
   Platform,
 } from 'react-native';
 
+import { useRoute, useNavigation } from '@react-navigation/native';
+
 import bg from './../assets/images/BG.png';
 import Message from './../components/Message';
 import messages from './../assets/data/messages.json';
 import InputBox from './../components/InputBox';
 
 export default function ChatScreen() {
+  const route = useRoute();
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    //@ts-ignore
+    navigation.setOptions({ title: route.params?.name });
+  }, [route.params]);
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
